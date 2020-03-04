@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather or Not</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bebas+Neue|Bree+Serif|Domine|Kalam|Kaushan+Script|Montserrat+Alternates|Zilla+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="./style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  
+<video autoplay muted loop id="myVideo">
+  <source src="https://media.giphy.com/media/67uxmHhIF3uh6Ph8ew/giphy.mp4" type="video/mp4">
+</video>
+
+<video autoplay muted loop id="video-hot" class="hide">
+  <source src="https://media.giphy.com/media/Bg6z4LAg7n8nm/giphy.mp4" type="video/mp4">
+</video>
+
+<video autoplay muted loop id="video-cold" class="hide">
+  <source src="https://media.giphy.com/media/26FLdaDQ5f72FPbEI/giphy.mp4" type="video/mp4">
+</video>
+
+<div id="loader-wrapper" class="hide">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<!-- <nav class="nav-extended">
+    <h1>Weather or Not</h1>
+</nav> -->
+
+<div class="row container" id="search">
+    <h1>Weather Or Not</h1>
+    <input type="text-box" placeholder="Westwood, CA" id="value">
+        <a class="waves-effect waves-light btn-small" id="btn">
+        <i class="material-icons right">cloud</i>search
+    </a>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD03YxtfaypknuqI8E9HQdG_1cu2nlkaOQ"></script>
+<script type="text/javascript" src="https://api.eventful.com/js/api"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html> 
